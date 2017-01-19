@@ -2,8 +2,8 @@ from pyspark import SparkConf, SparkContext
 import sys, operator
 import re, string, unicodedata
 
-inputs = sys.argv[1]
-output = sys.argv[2]
+inputs = 'C:\\Users\\linhb\\a1-wordcount-small'
+output = 'C:\\Users\\linhb\\a1-output'
  
 conf = SparkConf().setAppName('word count')
 sc = SparkContext(conf=conf)
