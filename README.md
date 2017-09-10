@@ -9,5 +9,5 @@
 ## Project: Yelp Recommender System with Collaborative Filtering
 *	Collaborative Filtering Recommender System (Matrix Factorization, Item-Similarity) based on restaurant detail and user rating datasets from Yelp
 * Web-based demo to demonstrate and visualize the recommender system’s result
-* Technologies: Scala, Spark, MLlib, Cassandra, Hadoop Cloudera Distribution, Google Map API, D3.js
+* Technologies: Python, Spark, MLlib, Cassandra, Hadoop Cloudera Distribution, Google Map API, D3.js
 
