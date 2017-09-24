@@ -79,9 +79,12 @@ Once the testing is completed, please press ctrl + c to terminate the server.
 
 ### IV. Static Demo Website - User Interface, Visualization and Push Notification simulation:
 - The user interface with visualization demo can be accessed at the below URL. As described above, It shows top 20 recommended restaurants for a specific state, togethers with barchart showing ratings and line charts showing checkin details (24 x 7) of the restaurants. 
+
 	https://liambll.github.io/Visual-Analytics/index.html
 
 - The Push Notification simulation ca be accessed at:
+
 	https://liambll.github.io/Visual-Analytics/simulation.html
+	
 Please download the yelp_business_demo.csv file at the end of the webpage and use Choose File button to load the the file. Around 500 markers representing 500 businesses will be shown on Google Map. Move the mouse to simulating a customer driving around. When a customer is near one of his/her potentially favorite restaurants, a message will be shown in "Push Notification" area, simulating that the customer receive a push notification about the restaurant.
 
