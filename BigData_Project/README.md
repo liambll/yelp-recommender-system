@@ -82,7 +82,7 @@ Once the testing is completed, please press ctrl + c to terminate the server.
 
 	https://liambll.github.io/Visual-Analytics/index.html
 
-- The Push Notification simulation ca be accessed at:
+- The Push Notification simulation can be accessed at:
 
 	https://liambll.github.io/Visual-Analytics/simulation.html
 	
