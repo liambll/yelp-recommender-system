@@ -1,6 +1,7 @@
 from pyspark import SparkConf, SparkContext
 import sys, os
 from pyspark.mllib.recommendation import ALS, MatrixFactorizationModel, Rating
+from pyspark.ml.clustering import KMeans
 from pyspark.sql.functions import levenshtein
 from pyspark.sql import SQLContext
 import itertools
