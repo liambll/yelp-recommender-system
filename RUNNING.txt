@@ -1,9 +1,9 @@
-# BigData_Project - Recommender System and Visualization with Yelp data
-- Collaborative Filtering Recommender System (Matrix Factorization, Item-Similarity) based on restaurant detail and user rating datasets from Yelp
-- Web-based demo to demonstrate and visualize the recommender system’s result
-- Technologies: Python, Spark, MLlib, Cassandra, Hadoop Cloudera Distribution, Google Map API, D3.js
 
-## I. Data Processing
+# BigData_Project Instruction
+Below command needs to be run before running any Spark job:
+module load sparkfix
+
+I. Data Processing
 1. readjson.py converts JSON source dataset to tabular csv format, and process_business_checkin.py handles normalization of check-in data. These processed data are located at /user/llbui/bigbang/ HDFS folder.
 
 2. load_cassandra.py load data to Cassandra
@@ -19,7 +19,7 @@ spark-submit --packages TargetHolding/pyspark-cassandra:0.3.5,com.databricks:spa
 - Load Review table:
 spark-submit --packages TargetHolding/pyspark-cassandra:0.3.5,com.databricks:spark-csv_2.11:1.5.0 --master=yarn-client load_cassandra.py /user/llbui/bigbang/yelp_academic_dataset_review.csv bigbang yelp_review
 
-## II. Data Analysis
+II. Data Analysis
 1. Model Evaluation and Selection:
 spark-submit --packages TargetHolding/pyspark-cassandra:0.3.5 model_selection.py /user/suchitav/output-425
 In the output path /user/suchitav/output-425, following model parameters are saved:
@@ -41,7 +41,7 @@ spark-submit --packages TargetHolding/pyspark-cassandra:0.3.5 --driver-memory 2g
 - Cassandra table bigbang.user_pred_ratings contains all predictions
 - Cassandra tables bigbang.recommendations and bigbang.recommendations_checkin contains output for top 20 restaurants and their check-in information for each user in each state.
 
-### III. Live Demo Website: User Interface and Visualization Live-Demo:
+III. Live Demo Website: User Interface and Visualization Live-Demo:
 Note: The live-demo will work only within SFU Campus as there will be a firewall issue if tried to access from different internet service other than SFU wifi. For Static-Demo that is accessible anywhere, please see Section IV.
 1. Start the webserver:
 - Please go to the below path. Node exe and the scripts are placed here.
@@ -77,14 +77,10 @@ On clicking more details, ratings of the recommended restaurants can be seen in 
 3. Stop the server:
 Once the testing is completed, please press ctrl + c to terminate the server.
 
-### IV. Static Demo Website - User Interface, Visualization and Push Notification simulation:
+IV. Static Demo Website - User Interface, Visualization and Push Notification simulation:
 - The user interface with visualization demo can be accessed at the below URL. As described above, It shows top 20 recommended restaurants for a specific state, togethers with barchart showing ratings and line charts showing checkin details (24 x 7) of the restaurants. 
+	https://liambll.github.io/demo/index.html
 
-	https://liambll.github.io/Visual-Analytics/index.html
-
-- The Push Notification simulation can be accessed at:
-
-	https://liambll.github.io/Visual-Analytics/simulation.html
-	
+- The Push Notification simulation ca be accessed at:
+	https://liambll.github.io/demo/simulation.html
 Please download the yelp_business_demo.csv file at the end of the webpage and use Choose File button to load the the file. Around 500 markers representing 500 businesses will be shown on Google Map. Move the mouse to simulating a customer driving around. When a customer is near one of his/her potentially favorite restaurants, a message will be shown in "Push Notification" area, simulating that the customer receive a push notification about the restaurant.
-
