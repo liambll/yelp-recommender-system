@@ -58,15 +58,16 @@ Note: The live-demo will work only within SFU Campus as there will be a firewall
         http://gateway.sfucloud.ca:8000/
         
 - Enter the userid and password. Below are some of the userids to test with. Password is always 12345678 for demo purpose.
-* hc4D2WkjKG8mk1C9e0fsQQ
-* iAAj55EL3coC2rYtXsbM5g
-* Q7aDwMVp4B2E3zdAf0dsSg
-* PQSvLVLMqo-Wiqlb_rTlPA
-* f-PNqJwmcWkyRNTUpMJ8Aw
-* 5SKmZ6spwRE__V0uI8YWDg
-* WgyDBAY2QXVD4GaudWQDcg
-* _sKocx_OjrQrLnGYNMuacg
-* uP04N5nsDbrRhCwa3LCyZw
+  * hc4D2WkjKG8mk1C9e0fsQQ
+  * iAAj55EL3coC2rYtXsbM5g
+  * Q7aDwMVp4B2E3zdAf0dsSg
+  * PQSvLVLMqo-Wiqlb_rTlPA
+  * f-PNqJwmcWkyRNTUpMJ8Aw
+  * 5SKmZ6spwRE__V0uI8YWDg
+  * WgyDBAY2QXVD4GaudWQDcg
+  * _sKocx_OjrQrLnGYNMuacg
+  * uP04N5nsDbrRhCwa3LCyZw
+
 If the userid/password is invalid, an appropriate error message will get displayed.
 
 - After loggin in, the page will show the visualization of restaurant recommendations. The top 20 recommended restaurants are shown for the user for the province Ontario, Canada by default. Similarly for 10 different
